@@ -1,0 +1,7 @@
+/*Integrating a new font*/
+@font-face {
+  font-family: Lato;
+  src: url("/images/font/Lato-Regular.ttf");
+  font-weight: 400;
+}
+
