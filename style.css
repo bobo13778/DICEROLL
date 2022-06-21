@@ -1,7 +1,51 @@
-/*Integrating a new font*/
-@font-face {
-  font-family: Lato;
-  src: url("/images/font/Lato-Regular.ttf");
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: "Lato";
+  /*Two-colored background*/
+  background-image: url("./images/bgimage.png");
+  background-size : cover;
+  background-position: center;
 }
 
+.back {
+  background-image: linear-gradient(90deg, #f7f7f7 50%, #ffffff 50%);
+  height:90vh;
+}
+
+.totalScore {
+  color:#EA4D4C;
+  font-size: 5rem;
+}
+
+.currentScore {
+  background: #EA4D4C;
+  font-size: 1rem;
+}
+
+svg {
+  color:#EA4D4C;
+}
+
+.currentScoreText {
+  color: white;
+  font-size: 2rem;
+}
+
+.redDot {
+  width: 10px;
+}
+
+.playerName {
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .playerName {
+    font-size: 4rem;
+  }
+
+  .redDot {
+    width: 25px;
+  }
+}
