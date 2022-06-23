@@ -1,14 +1,16 @@
+/*Adding new font*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
   font-family: "Lato";
-  /*Two-colored background*/
+/*Main background*/
   background-image: url("./images/bgimage.png");
   background-size : cover;
   background-position: center;
 }
 
 .back {
+/*Two-colored background*/
   background-image: linear-gradient(90deg, #f7f7f7 50%, #ffffff 50%);
   height:90vh;
 }
@@ -40,9 +42,18 @@ svg {
   font-size: 1.1rem;
 }
 
+.result {
+  font-size: 1.1rem;
+}
+
+/*Better responsive display*/
 @media screen and (min-width: 768px) {
   .playerName {
     font-size: 4rem;
+  }
+
+  .result {
+    font-size: 3rem;
   }
 
   .redDot {
