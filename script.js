@@ -46,7 +46,7 @@ $(function($){
       setTimeout(() => {
         diceImg.attr("src", diceSrc[rollResult-1]);
         if (rollResult !== 1) {
-          if(turn %2 === 1) {
+          if(turn % 2 === 1) {
             player1CurScore += rollResult; 
             player1CurrentScore.text(player1CurScore);
           } else {
@@ -143,15 +143,12 @@ $(function($){
   //Function to change player
   let changePlayer = () => {
     turn++;
-    console.log("turn n°" + turn);
     if(turn % 2 === 1) {
       player1Turn.removeClass("d-none");
       player2Turn.addClass("d-none");
-      console.log("turn player 1");
     } else {
       player2Turn.removeClass("d-none");
       player1Turn.addClass("d-none");
-      console.log("turn player 2");
     };
   };
 
@@ -171,6 +168,7 @@ $(function($){
     $("#player1Result").text("");
     $("#player2Result").text("");
     changePlayer();
+    disableBtn();
     enableBtn();
   };
 
